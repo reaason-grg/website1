@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('backgroung.jpeg') no-repeat center/cover;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+}
+#nav{ 
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+#nav ul{
+    display: flex;
+    list-style: none;
+    margin: 20px,0px;
+}
+#nav ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 20px 20px;
+    transition: ease;
+}
+#nav ul li a:hover{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    box-shadow:0 0 10px burlywood;
+}
+div.main{
+    display: flex;
+}
+
+div.socials{
+    width: 3rem;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+div.mypics{
+    width: 45%;
+}
+
+div.content{
+    padding-top: 7rem;
+    width: 45%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.socials img{
+    padding-bottom: 2rem;
+    transition: .3s;
+}
+
+.socials img:hover{
+    transition: .3s;
+    opacity: .6;
+    transform: scale(1.25);
+}
+
+.mypics{
+    transform: scale(0.85);
+    background-image: url('reason.jpeg');
+    margin: auto;
+    background-size: cover;
+    background-position: top;
+    height: 40rem;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+div.content font.hello{
+    font-size: 2rem;
+}
+
+p.myname{
+    font-size: 4rem;
+    font-family: monospace;
+    animation-name: float;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+    
+}
+button.button{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: .6rem 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(80deg, rgb(104, 103, 103),rgb(53, 53, 52));
+    transition: .3s;
+    animation-name: scale;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+
+button.button:hover{
+    background: linear-gradient(100deg,rgb(77, 77, 76), rgb(97, 96, 96));
+    transition: .3s;
+    cursor: pointer;
+}
+
+button.button:active{
+    background: none;
+}
+
+
+div.wholebox{
+    background: rgba(0, 0, 0,0.6);
+    position: absolute;
+    display: none;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: fade-in .4s both linear;
+    animation-iteration-count: unset;
+    animation-direction: normal;
+}
+
+div.box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+    background-color: rgba(20, 20, 20,.9);
+    border-radius: 4rem 0 4rem 0;
+    box-shadow: .2rem .2rem 2rem rgba(168, 168, 168,.4);
+    animation: float 2s ease-in infinite alternate-reverse both;
+}
+
+div.photo{
+    height: 14.3rem;
+    width: 14rem;
+    border-radius: 50%;
+    background-image: url(IMG-1368.jpg);
+    border: .4rem solid white;
+    padding: .3rem;
+    transition: .2s;
+
+}
+
+div.photo img:hover{
+    border: .4rem solid rgb(114, 114, 114);
+}
+img#myphoto:hover{
+    opacity: .4;
+    transition: .5s;
+}
+
+p.mee{
+    font-weight: bold;
+}
+
+p.mee::after{
+    content: "";
+    background-color: white;
+    height: .2rem;
+    width: 0;
+    margin: 0;
+    display: block;
+    border-radius: 50rem;
+    transition: .3s;
+}
+
+p.mee:hover::after{
+    width: 90%;
+}
+
+div.int{
+    position: relative;
+    padding: 4rem 6rem;
+    font-size: 2rem;
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button.done{
+    position: relative;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background: linear-gradient(80deg, rgb(104, 103, 103),rgb(53, 53, 52));
+    color: white;
+    transition: .3s;
+}
+
+button.done:hover{
+    background: linear-gradient(100deg,rgb(118, 221, 109),rgb(18, 70, 25));
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+div.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 50%;
+    height: 10%;
+}
+
+div.socials img{
+    height: 5rem;
+}
+
+div.socials a:active{
+    opacity: .6;
+}

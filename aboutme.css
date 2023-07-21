@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+body{
+    background: url('backgroung.jpeg') no-repeat center/cover;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+  
+}
+.aboutme{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+    height: 100%;
+    width: 60%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    display: flex;
+    margin-left: 65%;
+    margin-top: -250px;
+    padding: -100px;
+}

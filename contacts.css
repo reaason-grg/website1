@@ -1,0 +1,6 @@
+body{
+    background: url('backgroung.jpeg') no-repeat center/cover;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+}
